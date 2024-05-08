@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-function ProductList() {
+const ProductList = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const fetchProducts = async () => {
@@ -38,6 +38,6 @@ function ProductList() {
       </ul>
     </div>
   );
-}
+};
 
 export default ProductList;
